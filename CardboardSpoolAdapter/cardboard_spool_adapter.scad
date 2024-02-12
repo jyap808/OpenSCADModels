@@ -29,12 +29,12 @@ module spool_insert() {
 
 // Create the head
 module head() {
-    chamfered_cylinder(h = dial_height + head_height + chamfer_mm, d = spool_width + 0.5, chamfer_mm);
+    chamfered_cylinder(h = dial_height + head_height + chamfer_mm, d = spool_width + 0.5, chamfer = chamfer_mm);
 }
 
 // Create the dial
 module dial() {
-    chamfered_cylinder(h = dial_height, d = (2 * brim_width) + spool_width, chamfer_mm);
+    chamfered_cylinder(h = dial_height, d = (2 * brim_width) + spool_width, chamfer = chamfer_mm);
 }
 
 // Main assembly
